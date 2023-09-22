@@ -37,5 +37,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0' // SignUp/SignIn
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0' //taken from https://square.github.io/retrofit/ from GitHub
+    implementation 'com.google.code.gson:gson:2.10.1' //taken from https://github.com/google/gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0' //taken from https://github.com/square/retrofit/tree/master/retrofit-converters/gson
+
+    implementation 'com.squareup.picasso:picasso:2.8'
 }

@@ -30,6 +30,7 @@ public class GoogleService {
     private void initGoogleAccount() {
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
+                .requestProfile()
                 .build();
         gsc = GoogleSignIn.getClient(context, gso);
     }

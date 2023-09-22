@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Normal"/>
+        android:text="Normal SDKs"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Class"/>
+        android:text="Code in Class"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -47,6 +47,26 @@
 
         <ImageView
             android:id="@+id/google_class_btn"
+            android:layout_width="@dimen/icon_social_btn"
+            android:layout_height="@dimen/icon_social_btn"
+            android:layout_margin="8dp"
+            android:src="@drawable/google_btn"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Overview of One Tap sign-in on Android"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/google_one_tap_btn"
             android:layout_width="@dimen/icon_social_btn"
             android:layout_height="@dimen/icon_social_btn"
             android:layout_margin="8dp"
