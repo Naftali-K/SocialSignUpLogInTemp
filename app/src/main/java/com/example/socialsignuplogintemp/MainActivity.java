@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView googleBtn, appleBtn, googleClassBtn, googleOneTapBtn;
+    private ImageView googleBtn, appleBtn, googleClassBtn, googleOneTapBtn, googleOneTap2024Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getBaseContext(), GoogleOneTapActivity.class));
             }
         });
+
+        googleOneTap2024Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getBaseContext(), GoogleOneTap2024Activity.class));
+            }
+        });
     }
 
     private void setReferences() {
@@ -42,5 +49,6 @@ public class MainActivity extends AppCompatActivity {
         appleBtn = findViewById(R.id.apple_btn);
         googleClassBtn = findViewById(R.id.google_class_btn);
         googleOneTapBtn = findViewById(R.id.google_one_tap_btn);
+        googleOneTap2024Btn = findViewById(R.id.google_one_tap_2024_btn);
     }
 }
